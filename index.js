@@ -335,7 +335,7 @@ app.get( '/messages/:messageId', function( request, response ) {
 /*------------ RUN SERVER ------------*/
 
 var runServer = function( callback ) {
-  var databaseUri = process.env.DATABASE_URI || global.databaseUri || ' mongodb://<dbuser>:<dbpassword>@ds029051.mlab.com:29051/shopping-list';
+  var databaseUri = process.env.DATABASE_URI || global.databaseUri || 'mongodb://sgregg13:GN[YRQvJd6t=G9qZcouk@ds029051.mlab.com:29051/shopping-list';
   mongoose.connect( databaseUri ).then( function() {
     var port = process.env.PORT || 8080;
     var server = app.listen( port, function() {
