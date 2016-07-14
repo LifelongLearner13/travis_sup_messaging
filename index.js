@@ -7,7 +7,6 @@ var Message = require( './models/message' );
 var bcrypt = require( 'bcrypt' );
 var passport = require( 'passport' );
 var BasicStrategy = require( 'passport-http' ).BasicStrategy;
-var auto = require( 'run-auto' );
 
 var app = express();
 
