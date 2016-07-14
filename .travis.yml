@@ -3,7 +3,7 @@ node_js: node
 services:
 - mongodb
 env:
- - CXX=g++-4.8
+- CXX=g++-4.8
 addons:
   apt:
     sources:
@@ -12,3 +12,10 @@ addons:
     packages:
     - mongodb-org-server
     - g++-4.8
+deploy:
+  provider: heroku
+  api_key:
+    secure: AeoJi4Hz/kjWzpTZgLmRKESyjImSwfIxtWPaklR8f7kaPWy7pxdLVsl1prHsY3DlEpPfhvngQDVBAOmS8DKgj1u5jwVjOz0lZt8JpQTIMMBeHyaTpYH7vNjJouM34U2tgkEyYL2Yh9jkjQHkkK3R3+h4QHcQz44iGnTZFIjjRfC/1YVH3YS6p4GvmhfRnAxlqWbTNWJihD1mHW1rdVRqzbS9XFK9bs1p2NaJS4SXmQL280mEVuBn4oNv5V8X82XJfOwuU5/k1DEIwBN+DKBJR7bwishz2zltYZhx0bmDvFdXOp5V0XEQOoaqIJ3+k6zlulMTPboKjAYv9V94CnxsbweuwTEmnXmVaSaIQvgF6eHXN2wRgQmPTWst6ewvF+/Bc6BnkNu4LdwBWiTnkylFnVC72UqgTtDnQP9RvAmqCJVlxPTcPCeUXOY798KYNbnx6x2piaGYNRCbuyDKpi9q1C7Id/GEqaUWSSmvq2spvdzRgz0hcaSMkjdGLcsiumpDe/b1nI/XUiBJlzKGyx5ng8eHzhnkXmS7hRGFAB/xOAJj236FZlfnW2syXSG+HIpQdh9Rjg5Zs0F5e88sY6UjSccqzWOxTMCB7XVHK5AtXk0MUwq44o5/6+sjwEZcbEYmyAX6gI4x0B6kiS0LRLf6kU8d1lqwWJnOLPo6D860HyE=
+  app: sensationnel-gerard-89125
+  on:
+    repo: LifelongLearner13/travis_sup_messaging
